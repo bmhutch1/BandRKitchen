@@ -5,37 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css">
     <style>
+        
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        
         #top{
-            background-color: aqua;
+            background-color: #FFFFFF;
         }
         #menu{
-            background-color: blue;
+            background-color: #FFFFFF;
+            float: left;
+            height: 10vh;
+            width: 10vh;
+        }
+        #menu-button{
+            background-color: #FFFFFF;
+            height: 10vh;
+            width: 10vh;
+            padding: 11;
         }
         #top-header{
-            background-color: chartreuse;
+            background-color: #FFFFFF;
+            height: 10vh;
+            width: 100vw;
+            color: #868686;
+            padding-left: 10vh;
+        }
+        #logo{
+            padding: 3vh 10px;
+            font-size: 3.5vh;
         }
         #main{
             background-color: firebrick;
+            float: left;
+            height: 90vh;
+            width: 100vw;
         }
         #main-header{
             background-color: darkorange;
+            height: 10vh;
+            width: 50vw;
         }
         #main-search{
             background-color: fuchsia;
+            height: 10vh;
+            width: 50vw;
         }
         #main-random{
             background-color: darkred;
+            height: 10vh;
+            width: 50vw;
+        }
+        .clear{
+            clear: both;
         }
     </style>
   </head>
   <body>
       <div id="top">
           <div id="menu">
-              <button type="button" onclick="alert('Hello world!')">Menu</button>
+              <input id="menu-button" type="image" src="images/menu_icon.PNG" onclick="alert('Hello world!')">
           </div>
           <div id="top-header">
+              <p id="logo">B&R's Kitchen</p>
           </div>
       </div>
+      <div class="clear"></div>
       <div id="main">
           <div id="main-header">
           </div>
